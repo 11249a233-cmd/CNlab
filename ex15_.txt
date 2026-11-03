@@ -1,0 +1,8 @@
+host 192.168.1.10
+net 192.168.1.0/24
+src host 192.168.1.10
+dst port 53
+tcp port 443
+udp
+not arp and not broadcast
+tcp port 80 and host 192.168.1.10

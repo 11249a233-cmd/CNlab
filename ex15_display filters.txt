@@ -1,0 +1,10 @@
+ip.addr == 192.168.1.10
+ip.src == 192.168.1.10
+tcp.port == 80
+http
+dns
+http.request.method == "GET"
+tcp.flags.syn == 1 && tcp.flags.ack == 0
+tcp.analysis.retransmission
+ip.addr == 192.168.1.10 && tcp.port == 443
+frame contains "password"
